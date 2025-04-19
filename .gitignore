@@ -1,3 +1,4 @@
 .env
 sounds/
 cache/
+__pycache__/
