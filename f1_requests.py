@@ -24,7 +24,7 @@ def getDriverStandings(year):
     standings = standings[selected_columns]
     return standings
 
-def getDriverInfoByGP(gp, year, session, id): 
+def getDriverInfoByGP(year: int, gp: str, session: str, id: str):
     session = loadSession(year, gp, session)
     driver = session.get_driver(id)  # example: "VER"
     selected_columns = ['FullName','Abbreviation','DriverNumber','TeamName','CountryCode','Status','Position','Points']
