@@ -26,7 +26,7 @@ class Client(commands.Bot):
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
         try:
-            synced = await self.tree.sync(guild=SERVER_ID)
+            synced = await self.tree.sync()
             print(f'Synced {len(synced)} commands.')
         except Exception as e:
             print(f'Error syncing commands: {e}')
@@ -41,15 +41,15 @@ class Client(commands.Bot):
 client = Client(command_prefix="!", intents=intents)
 
 
-@client.tree.command(name="balls", description="just do it", guild=SERVER_ID)
+@client.tree.command(name="balls", description="just do it")
 async def say_balls(interaction: discord.Interaction):
     await interaction.response.send_message("balls indeed")
 
-@client.tree.command(name="printer", description="copy message", guild=SERVER_ID)
+@client.tree.command(name="printer", description="copy message")
 async def printer(interaction: discord.Interaction, printer: str):
     await interaction.response.send_message(printer)
 
-@client.tree.command(name="help", description="commands", guild=SERVER_ID)
+@client.tree.command(name="help", description="commands")
 async def embed_demo(interaction: discord.Interaction):
     embed = discord.Embed(
         title="Traktor", url="https://www.formula1.com/", description="***🚜 Simply Lovely 🚜***", color=discord.Color.red()
@@ -71,7 +71,7 @@ async def embed_demo(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, file=ICON)
     
 
-@client.tree.command(name="constructors", description="Show constructor standings by year", guild=SERVER_ID)
+@client.tree.command(name="constructors", description="Show constructor standings by year")
 @app_commands.describe(year="The season year to fetch standings from")
 async def constructor_standings_embed(interaction: discord.Interaction, year: int):
     try:
@@ -117,7 +117,7 @@ async def constructor_standings_embed(interaction: discord.Interaction, year: in
         print(e)
 
         
-@client.tree.command(name="drivers", description="Show driver standings by year", guild=SERVER_ID)
+@client.tree.command(name="drivers", description="Show driver standings by year")
 @app_commands.describe(year="The season year to fetch standings from")
 async def driver_standings_embed(interaction: discord.Interaction, year: int):
     try:
@@ -164,7 +164,7 @@ async def driver_standings_embed(interaction: discord.Interaction, year: int):
         await interaction.response.send_message(f"❌ Error: Could not fetch driver standings for year {year}.", ephemeral=True)
         print(e)
         
-@client.tree.command(name="driverinfo", description="Show driver info for a specific GP session", guild=SERVER_ID)
+@client.tree.command(name="driverinfo", description="Show driver info for a specific GP session")
 @app_commands.describe(gp="The Grand Prix name (e.g. monza, bahrain, monaco)",year="The season year (e.g. 2024)",session="Session type (e.g. FP1/2/3, Q(Qualy), S(Sprint), R(race))",driver_id="Driver ID (e.g. VER, HAM, NOR)")
 async def driver_info_embed(
     interaction: discord.Interaction,
@@ -208,7 +208,7 @@ async def driver_info_embed(
         )
         print(e)
 
-@client.tree.command(name="calendar", description="Show the remaining Grand Prix races for the current season", guild=SERVER_ID)
+@client.tree.command(name="calendar", description="Show the remaining Grand Prix races for the current season")
 async def remaining_gp_embed(interaction: discord.Interaction):
     try:
         await interaction.response.defer()  # Defer to allow time for API call
@@ -242,7 +242,7 @@ async def remaining_gp_embed(interaction: discord.Interaction):
         await interaction.followup.send("❌ Error: Could not fetch remaining GPs.", ephemeral=True)
         print(e)
         
-@client.tree.command(name="gpinfo", description="Show detailed info for a specific Grand Prix", guild=SERVER_ID)
+@client.tree.command(name="gpinfo", description="Show detailed info for a specific Grand Prix")
 @app_commands.describe(gp="The Grand Prix name (e.g. monza, monaco, bahrain)",year="The F1 season year (e.g. 2024)")
 async def gp_info_embed(interaction: discord.Interaction, year: int, gp: str):
     try:
@@ -283,7 +283,7 @@ async def gp_info_embed(interaction: discord.Interaction, year: int, gp: str):
 import discord
 from discord import app_commands
 
-@client.tree.command(name="gpresults", description="Show session results for a specific Grand Prix", guild=SERVER_ID)
+@client.tree.command(name="gpresults", description="Show session results for a specific Grand Prix")
 @app_commands.describe(gp="The Grand Prix name (e.g. monza, monaco, bahrain)", year="The F1 season year (e.g. 2024)", session="The session type (e.g. qualifying, race)")
 async def gp_session_embed(interaction: discord.Interaction, year: int, gp: str, session: str):
     try:
@@ -325,7 +325,7 @@ async def gp_session_embed(interaction: discord.Interaction, year: int, gp: str,
         await interaction.followup.send("❌ Error: Could not fetch session results.", ephemeral=True)
         print(e)
 
-@client.tree.command(name="seasonschedule",description="Show the full Grand Prix calendar for a given season",guild=SERVER_ID)
+@client.tree.command(name="seasonschedule",description="Show the full Grand Prix calendar for a given season")
 @app_commands.describe(year="The season year (e.g. 2025)")
 async def season_schedule_embed(interaction: discord.Interaction, year: int):
     try:
@@ -366,7 +366,7 @@ async def season_schedule_embed(interaction: discord.Interaction, year: int):
         await interaction.followup.send("❌ Error: Could not fetch schedule.", ephemeral=True)
         print(e)
 
-@client.tree.command(name="simplylovely", description="Simply Lovely!", guild=SERVER_ID)
+@client.tree.command(name="simplylovely", description="Simply Lovely!")
 async def simply_lovely(interaction: discord.Interaction):
     try:
         await interaction.response.defer()
@@ -381,7 +381,7 @@ async def simply_lovely(interaction: discord.Interaction):
         print(e)
 
 #TO DO: FINISH SOUNDBOARD COMMAND
-#@client.tree.command(name='soundboard', description='Play a sound from the soundboard', guild=SERVER_ID)
+#@client.tree.command(name='soundboard', description='Play a sound from the soundboard')
 #@app_commands.describe(sound_name="Name of the sound to play")
 #async def soundboard(interaction: discord.Interaction, sound_name: str):
 #    if sound_name not in SOUNDS:
