@@ -1,9 +1,9 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-import requests.f1_requests as f1_requests
+import f1requests.f1_requests as f1_requests
 
-ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
 
 def setup(client: commands.Bot):
     @client.tree.command(name="seasonschedule",description="Show the full Grand Prix calendar for a given season")
@@ -18,7 +18,7 @@ def setup(client: commands.Bot):
                 await interaction.followup.send("🚫 No schedule found for that season.", ephemeral=True)
                 return
     
-            ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+            ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
     
             embed = discord.Embed(
                 title=f"F1 {year} Season Calendar",

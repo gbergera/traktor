@@ -1,9 +1,9 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-import requests.f1_requests as f1_requests
+import f1requests.f1_requests as f1_requests
 
-ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
 
 def setup(client: commands.Bot):
     @client.tree.command(name="simplylovely", description="Simply Lovely!")

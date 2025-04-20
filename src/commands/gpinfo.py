@@ -1,9 +1,9 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-import requests.f1_requests as f1_requests
+import f1requests.f1_requests as f1_requests
 
-ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
 
 def setup(client: commands.Bot):
     @client.tree.command(name="gpinfo", description="Show detailed info for a specific Grand Prix")
@@ -18,7 +18,7 @@ def setup(client: commands.Bot):
                 await interaction.followup.send(f"⚠️ GP '{gp}' not found for year {year}.", ephemeral=True)
                 return
     
-            ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+            ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
     
             embed = discord.Embed(
                 title=f"{event_data['EventName']} - {year}",

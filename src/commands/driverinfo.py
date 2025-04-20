@@ -1,9 +1,9 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-import requests.f1_requests as f1_requests
+import f1requests.f1_requests as f1_requests
 
-ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
 
 def setup(client: commands.Bot):
     @client.tree.command(name="driverinfo", description="Show driver info for a specific GP session")
@@ -21,7 +21,7 @@ def setup(client: commands.Bot):
             driver_df = f1_requests.getDriverInfoByGP(year, gp, session, driver_id)
             driver = driver_df.iloc[0]
     
-            ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+            ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
     
             embed = discord.Embed(
                 title=f"{driver['FullName']} - {gp.title()} {year}",

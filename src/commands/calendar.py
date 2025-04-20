@@ -1,10 +1,10 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-import requests.f1_requests as f1_requests
+import f1requests.f1_requests as f1_requests
 from datetime import datetime
 
-ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
 
 def setup(client: commands.Bot):
     @client.tree.command(name="calendar", description="Show the remaining Grand Prix races for the current season")
@@ -18,7 +18,7 @@ def setup(client: commands.Bot):
                 await interaction.followup.send("🏁 No remaining GPs found for this season!", ephemeral=True)
                 return
     
-            ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
+            ICON = discord.File("../img/TRUCK.png", filename="TRUCK.png")
     
             embed = discord.Embed(
                 title=f"Remaining GPs - {datetime.now().year}",

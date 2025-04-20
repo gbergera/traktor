@@ -46,7 +46,6 @@ def getGPInfoByName(gp,year):
 def getGPSessionResult(year, gp, session):
     session = loadSession(year, gp, session)
     results = session.results[['Abbreviation', 'Points', 'GridPosition', 'Status']]
-    print (results)
     return results
 
 
