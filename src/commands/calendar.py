@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-import f1_requests
+import requests.f1_requests as f1_requests
 from datetime import datetime
 
 ICON = discord.File("./img/TRUCK.png", filename="TRUCK.png")
