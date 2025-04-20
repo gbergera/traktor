@@ -18,3 +18,7 @@ Traktor is a discord bot developed in python that uses the [Fastf1](https://docs
 * 🏎️ ***Seasonschedule***🏎️
 * 🏎️ ***Calendar*** 🏎️
 * 🏎️ ***Simplylovely*** 🏎️
+
+
+## How to Run
+if in **vscode** by pressing the ```play``` button it fails, you can also Execute ``` python -m main.py ``` inside the project in your terminal and it will work perfectly fine
