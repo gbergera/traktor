@@ -35,7 +35,7 @@ Traktor is a discord bot developed in python that uses the [Fastf1](https://docs
 3- To stop the container use ``` docker stop traktor ```
 
 ### Locally
-In**vscode** by pressing the ```play``` button should work, if it fails, you can also Execute ``` python -m main.py ``` inside the project in your terminal and it will work perfectly fine.
+In **vscode** by pressing the ```play``` button should work, if it fails, you can also Execute ``` python -m main.py ``` inside the project in your terminal and it will work perfectly fine.
 
 ## Images
 All images are generated with the [fast f1 examples galery](https://docs.fastf1.dev/gen_modules/examples_gallery/index.html)
