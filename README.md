@@ -8,20 +8,20 @@
 Traktor is a discord bot developed in python that uses the [Fastf1](https://docs.fastf1.dev/) package to deliver the latest and past seasons data in discord.
 
 ## Commands
-* 🏎️ ***Balls*** 🏎️: Balls
-* 🏎️ ***Printer*** 🏎️: Basic command to make the bot say anything
-* 🏎️ ***Drivers*** 🏎️: Show driver standings by year
-* 🏎️ ***Driverinfo*** 🏎️: Show driver info for a specific GP session on a certain year
-* 🏎️ ***Constructors*** 🏎️: Show constructor standings by year
-* 🏎️ ***Gpinfo*** 🏎️: Show detailed info for a specific Grand Prix a specific year
-* 🏎️ ***Gpresults*** 🏎️: Show session results for a specific Grand Prix a certain year
-* 🏎️ ***Seasonschedule***🏎️: Gets the schedule of a specific GP
-* 🏎️ ***Calendar*** 🏎️ : Gets the GP left this season
-* 🏎️ ***Positionchanges*** 🏎️ : Shows an image of the position changes of the race
-* 🏎️ ***Trackspeed*** 🏎️ :" Shows an image of a specific driver in a session
-* 🏎️ ***Qualifyingresults*** 🏎️: Shows an image with the gap between each driver in qualy
-* 🏎️ ***Cornergraph*** 🏎️: Shows an image of the different corners in a certain Grand Prix
-* * 🏎️ ***Simplylovely*** 🏎️: Simply Lovely!
+* 🏎️ **Balls** 🏎️: Balls
+* 🏎️ **Printer** 🏎️: Basic command to make the bot say anything
+* 🏎️ **Drivers** 🏎️: Show driver standings by year
+* 🏎️ **Driverinfo** 🏎️: Show driver info for a specific GP session on a certain year
+* 🏎️ **Constructors** 🏎️: Show constructor standings by year
+* 🏎️ **Gpinfo**🏎️: Show detailed info for a specific Grand Prix a specific year
+* 🏎️ **Gpresults** 🏎️: Show session results for a specific Grand Prix a certain year
+* 🏎️ **Seasonschedule**🏎️: Gets the schedule of a specific GP
+* 🏎️ **Calendar**🏎️ : Gets the GP left this season
+* 🏎️ **Positionchanges**🏎️ : Shows an image of the position changes of the race
+* 🏎️ **Trackspeed**🏎️ : Shows an image of a specific driver in a session
+* 🏎️ **Qualifyingresults**🏎️: Shows an image with the gap between each driver in qualy
+* 🏎️ **Cornergraph**🏎️: Shows an image of the different corners in a certain Grand Prix
+*  🏎️ **Simplylovely**🏎️: Simply Lovely!
 
 
 
