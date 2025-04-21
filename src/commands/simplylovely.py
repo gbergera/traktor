@@ -11,7 +11,7 @@ def setup(client: commands.Bot):
         try:
             await interaction.response.defer()
     
-            image_path = "./img/SIMPLY LOVELY.png" 
+            image_path = "../img/SIMPLY LOVELY.png" 
             image_file = discord.File(image_path, filename="SIMPLY LOVELY.png")
     
             await interaction.followup.send(file=image_file)

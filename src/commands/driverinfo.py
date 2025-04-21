@@ -36,10 +36,16 @@ def setup(client: commands.Bot):
             embed.add_field(name="Team", value=driver["TeamName"], inline=True)
             embed.add_field(name="Abbreviation", value=driver["Abbreviation"], inline=True)
             embed.add_field(name="Number", value=driver["DriverNumber"], inline=True)
-            embed.add_field(name="Country", value=driver["CountryCode"], inline=True)
-            embed.add_field(name="Status", value=driver["Status"], inline=True)
-            embed.add_field(name="Position", value=str(driver["Position"]), inline=True)
-            embed.add_field(name="Points", value=str(driver["Points"]), inline=True)
+
+            session_lower = session.lower()
+
+            if session_lower in ["r", "race"]:
+                embed.add_field(name="Position", value=str(driver["Position"]), inline=True)
+                embed.add_field(name="Points", value=str(driver["Points"]), inline=True)
+                embed.add_field(name="Status", value=driver["Status"], inline=True)
+                
+            elif session_lower in ["q", "qualy", "quali", "qualifying"]:
+                embed.add_field(name="Position", value=str(driver["Position"]), inline=True)
     
             await interaction.followup.send(embed=embed, file=ICON)
     
