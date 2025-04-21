@@ -42,6 +42,8 @@ All images are generated similarly as the [fast f1 examples galery](https://docs
 
 ### Examples
 
+### Examples
+
 <table>
   <tr>
     <td align="center"><b>Corners</b></td>
@@ -61,10 +63,11 @@ All images are generated similarly as the [fast f1 examples galery](https://docs
   </tr>
   <tr>
     <td align="center"><b>Speeds</b></td>
-    <td></td>
+    <td align="center"><b>Coming Soon</b></td>
   </tr>
   <tr>
     <td><img src="img/ExampleSpeeds.png" width="400"/></td>
-    <td></td>
+    <td align="center" style="color: gray; font-style: italic;">May consider adding other graphs available</td>
   </tr>
 </table>
+
