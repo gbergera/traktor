@@ -40,7 +40,6 @@ In **vscode** by pressing the ```play``` button should work, if it fails, you ca
 ## Images
 All images are generated similarly as the [fast f1 examples galery](https://docs.fastf1.dev/gen_modules/examples_gallery/index.html)
 
-### Examples
 
 ### Examples
 
