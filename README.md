@@ -28,12 +28,14 @@ Traktor is a discord bot developed in python that uses the [Fastf1](https://docs
 
 ## How to Run
 ### Docker (Recommended)
-1- execute ``` docker build -t traktor-app . ``` to build the image, you can rename your image by replacing the `traktor-app` which is the default
-2- Run the image built in last step with ```docker run -d --rm --name traktor traktor-app```
+1- Run ``` docker build -t traktor-app . ``` to build the image, you can rename the image by replacing the `traktor-app` which is the default name
+
+2- Run the image built in previous step with ```docker run -d --rm --name traktor traktor-app``` and start using!
+
 3- To stop the container use ``` docker stop traktor ```
 
 ### Locally
-if in **vscode** by pressing the ```play``` button it fails, you can also Execute ``` python -m main.py ``` inside the project in your terminal and it will work perfectly fine
+In**vscode** by pressing the ```play``` button should work, if it fails, you can also Execute ``` python -m main.py ``` inside the project in your terminal and it will work perfectly fine.
 
 ## Images
 All images are generated with the [fast f1 examples galery](https://docs.fastf1.dev/gen_modules/examples_gallery/index.html)
