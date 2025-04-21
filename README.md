@@ -70,4 +70,4 @@ All images are generated similarly as the [fast f1 examples galery](https://docs
     <td align="center" style="color: gray; font-style: italic;">May consider adding other graphs available</td>
   </tr>
 </table>
-
+EDIT: Huge shoutout to [fastf1](https://docs.fastf1.dev).This bot was created as a fun project, it is being run locally, may consider having it deployed somewhere.
