@@ -8,11 +8,11 @@
 Traktor is a discord bot developed in python that uses the [Fastf1](https://docs.fastf1.dev/) package to deliver the latest and past seasons data in discord.
 
 ## Commands
-* 🏎️ **Balls** 🏎️: Balls
+* 🏎️ **Balls**🏎️: Balls
 * 🏎️ **Printer** 🏎️: Basic command to make the bot say anything
 * 🏎️ **Drivers** 🏎️: Show driver standings by year
-* 🏎️ **Driverinfo** 🏎️: Show driver info for a specific GP session on a certain year
-* 🏎️ **Constructors** 🏎️: Show constructor standings by year
+* 🏎️ **Driverinfo**🏎️: Show driver info for a specific GP session on a certain year
+* 🏎️ **Constructors**🏎️: Show constructor standings by year
 * 🏎️ **Gpinfo**🏎️: Show detailed info for a specific Grand Prix a specific year
 * 🏎️ **Gpresults** 🏎️: Show session results for a specific Grand Prix a certain year
 * 🏎️ **Seasonschedule**🏎️: Gets the schedule of a specific GP
@@ -35,10 +35,10 @@ Traktor is a discord bot developed in python that uses the [Fastf1](https://docs
 3- To stop the container use ``` docker stop traktor ```
 
 ### Locally
-In **vscode** by pressing the ```play``` button should work, if it fails, you can also Execute ``` python -m main.py ``` inside the project in your terminal and it will work perfectly fine.
+In **vscode** by pressing the ```play``` button should work, if it fails, you can also Run ``` python -m main.py ``` inside the project in your terminal and it will work perfectly fine.
 
 ## Images
-All images are generated with the [fast f1 examples galery](https://docs.fastf1.dev/gen_modules/examples_gallery/index.html)
+All images are generated similarly as the [fast f1 examples galery](https://docs.fastf1.dev/gen_modules/examples_gallery/index.html)
 
 ### Examples
 
