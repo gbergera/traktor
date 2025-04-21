@@ -21,7 +21,12 @@ def setup(client: commands.Bot):
         embed.add_field(name="🏎️ ***Gpresults*** 🏎️", value="Show results of a specific Race", inline=True)
         embed.add_field(name="🏎️ ***Seasonschedule*** 🏎️", value="Show season schedule of a certain year", inline=True)
         embed.add_field(name="🏎️ ***Calendar*** 🏎️", value="Show calendar of the actual races", inline=False)
-        embed.add_field(name="🏎️ ***Simplylovely*** 🏎️", value="Simply Lovely!", inline=True)
+        embed.add_field(name="🏎️ ***Trackspeed*** 🏎️", value="Shows an image of a specific driver in a session!", inline=True)
+        embed.add_field(name="🏎️ ***Qualifyingresults*** 🏎️", value="Shows an image with the gap between each driver in qualy", inline=False)
+        embed.add_field(name="🏎️ ***Cornergraph*** 🏎️", value="Shows an image of the different corners in a certain Grand Prix", inline=False)
+        embed.add_field(name="🏎️ ***Positionchanges*** 🏎️", value="Shows an image of the position changes of the race", inline=True)
+        embed.add_field(name="🏎️ ***Simplylovely*** 🏎️", value="Simply Lovely!", inline=False)
+        
         embed.set_footer(text="Traktor")
         embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar)
     
