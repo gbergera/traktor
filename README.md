@@ -38,7 +38,7 @@ Traktor is a discord bot developed in python that uses the [Fastf1](https://docs
 In **vscode** by pressing the ```play``` button should work, if it fails, you can also Run ``` python -m main.py ``` inside the project in your terminal and it will work perfectly fine.
 
 ## Images
-All images are generated similarly as the [fast f1 examples galery](https://docs.fastf1.dev/gen_modules/examples_gallery/index.html)
+All images are generated similarly as the [fast f1 examples gallery](https://docs.fastf1.dev/gen_modules/examples_gallery/index.html)
 
 
 ### Examples
